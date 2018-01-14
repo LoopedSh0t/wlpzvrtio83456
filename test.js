@@ -54,11 +54,30 @@ client.on('message', message => {
   
   if (command == "help") {
 
-		message.reply("I have sent you my commands privatly")
-
-		message.author.send("Commands List: ",
-
-		"!ping - bot will respond with pong")
+		const embed = new Discord.RichEmbed()
+  .setTitle("My commands")
+  .setAuthor("L00PY", "https://cdn.discordapp.com/attachments/375966965958705162/401987260087533569/LIT2.png")
+  /*
+   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+   */
+  .setColor(0x00AE86)
+  .setDescription("Check below for my commands :arrow_down: ")
+  .setFooter("Dveloped by L00PY", "https://cdn.discordapp.com/attachments/375966965958705162/401987260087533569/LIT2.png")
+  /*
+   * Takes a Date object, defaults to current date.
+   */
+  .setTimestamp()
+  .addField(" ```\*jean```",
+    "he is stupid.")
+  /*
+   * Inline fields may not display as inline if the thumbnail and/or image is too big.
+   */
+  .addField(" ```\*add```", "a simple calculator command.", true)
+  /*
+   * Blank field, useful to create some space.
+   */
+  .addBlankField(true)
+  .addField(" ```\*say```", "The bot will say what you would like(you need to be admin).", true);
   }
 
 });
