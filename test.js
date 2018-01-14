@@ -62,7 +62,7 @@ client.on('message', message => {
      */
     .setColor(0x00AE86)
     .setDescription("Check below for my commands :arrow_down: ")
-    .setFooter("Dveloped by L00PY", "https://cdn.discordapp.com/attachments/375966965958705162/401987260087533569/LIT2.png")
+    .setFooter("Developed by L00PY", "https://cdn.discordapp.com/attachments/375966965958705162/401987260087533569/LIT2.png")
     /*
      * Takes a Date object, defaults to current date.
      */
