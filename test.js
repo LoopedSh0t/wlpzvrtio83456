@@ -22,10 +22,10 @@ client.on('guildMemberAdd', member => {
 
 client.on('message', message => {
   if(message.author.bot) return;  
-  if(!message.content.startsWith(config.prefix)) return;
+  if(!message.content.startsWith(prefix)) return;
 
   let command = message.content.split(" ")[0];
-  command = command.slice(config.prefix.length);
+  command = command.slice(prefix.length);
 
   let args = message.content.split(" ").slice(1);
 
