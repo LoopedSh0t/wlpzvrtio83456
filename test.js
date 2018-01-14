@@ -81,7 +81,7 @@ client.on('message', message => {
      */
     .setTimestamp()
     .addField(" ```\*jean```",
-      "he is stupid.")
+      " ```\*kick```", "The bot will kick any user(you need to be admin).")
     /*
      * Inline fields may not display as inline if the thumbnail and/or image is too big.
      */
@@ -90,12 +90,7 @@ client.on('message', message => {
      * Blank field, useful to create some space.
      */
     .addBlankField(true)
-    .addField(" ```\*say```", "The bot will say what you would like(you need to be admin).", true)
-    /*
-     * Blank field, useful to create some space.
-     */
-    .addBlankField(true)
-    .addField(" ```\*kick```", "The bot will kick any user(you need to be admin).", true);
+    .addField(" ```\*say```", "The bot will say what you would like(you need to be admin).", true);
 
     message.channel.send({embed});
     
