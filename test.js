@@ -78,6 +78,7 @@ client.on('message', message => {
    */
   .addBlankField(true)
   .addField(" ```\*say```", "The bot will say what you would like(you need to be admin).", true);
+  
   }
 
 });
