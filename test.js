@@ -65,14 +65,6 @@ client.on('message', message => {
 
   });  
   
-  if (command === "ping") {
-    message.reply('pong!');
-  } else
-
-  if (command === "jean") {
-    message.reply('stupid');
-  }
-  
   if (command == "help") {
 
     const embed = new Discord.RichEmbed()
