@@ -103,7 +103,7 @@ client.on('message', message => {
      * Blank field, useful to create some space.
      */
     .addBlankField(true)
-    .addField(" ```\*kick```", "The bot will kick any user(you need to be.", true);
+    .addField(" ```\*kick```", "The bot will kick any user(you need to be admin).", true);
 
     message.channel.send({embed});
     
